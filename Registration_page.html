@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+	<link rel="stylesheet" href="Registration-css.css">
+  </head>
+
+  <body>
+    <h2><center><u> Registration Form </u></center></h2>
+	<div class="section-center">
+	<form id="form">
+	
+    <div class="container">
+	
+        Name:
+        <br><br>
+        <input type="text" id="name" required     placeholder="enter your full name">
+        <br><br>
+        Username:
+        <br><br>
+        <input type="text" id="username" required     placeholder="enter your username"  maxlength="20">
+        <br><br>
+       Password:
+        <br><br>
+        <input type="password" id="password" required    placeholder="********" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one special character and one uppercase and lowercase letter" required  maxlength="8">
+        <br><br> 
+       Email:
+        <br><br>
+        <input type="email" id="email" required  placeholder="enter your email">
+        <br><br>
+       Birth date:
+        <br>
+        <input type="date" id="birthdate" required  placeholder="dd-mm-yyyy">
+        <br><br>
+       City:
+        <br><br>
+        <select id="city">
+		<option >SELECT THE CITY</option>
+          <option>Mumbai</option>
+          <option>New Delhi</option>
+          <option>Chennai</option>
+          <option>Hyderabad</option>
+        </select>
+        <br><br>
+       Programming Languages Known:
+        <br><br>
+        <input type="checkbox" id="c" value="C" />C
+        <br>
+        <input type="checkbox" id="cpp" value="C++" />C++
+        <br>
+        <input type="checkbox" id="java" value="Java" />Java
+        <br>
+        <input type="checkbox" id="javascript" value="JavaScript" />JavaScript
+        <br>
+        <input type="checkbox" id="python" value="Python" />Python
+        <br><br>
+      <br>
+      <button class="button" onsubmit="myFunction()" type="register">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspREGISTER&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+    </form>
+    <script src="Registration.js"></script>
+  
+  </body>
+</html>
